@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background:url('https://images5.alphacoders.com/133/1338700.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  /* background-color: white; */
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.cards,
+.card,
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .card {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  width: calc(100% / 4);
+  height: calc(100% / 4);
+}
+
+.card .view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  /* background-color: white; */
+  backface-visibility: hidden;
+}
+
+.cards {
+  width: 800px;
+  height: 600px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.front-view img {
+  width: 110px;
+}
+
+.back-view img {
+  width: 110px;
+}
+
+.back-view{
+    transform: rotateY(-180deg);
+}
+
+.btns{
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: space-between;
+}
+
+#startbtn, #resetbtn{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 35px;
+  color: white;
+}
+#startbtn{
+  background-color: green;
+  cursor: pointer;
+}
+
+#resetbtn{
+  background-color: red;
+  cursor: pointer;
+}
+
+#timer{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 45%;
+}
+
+#result{
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 41%;
+}
+
+.card{
+  transform-style:preserve-3d ;
+  transition: 0.5s;
+}
+
+.flipped{
+  transform: rotateY(-180deg);
+}
