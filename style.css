@@ -6,7 +6,8 @@
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background:url('https://images5.alphacoders.com/133/1338700.png');
+  /* background:url('https://images5.alphacoders.com/133/1338700.png'); */
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
